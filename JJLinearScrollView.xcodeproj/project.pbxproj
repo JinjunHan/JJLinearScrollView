@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B8D12AC00D20C11AD8CB82ED /* Pods_JJLinearScrollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F4AC50CF0036CADD59C2707 /* Pods_JJLinearScrollView.framework */; };
+		C299FE441F5139D4003616A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C299FE431F5139D4003616A9 /* AppDelegate.swift */; };
+		C299FE461F5139D4003616A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C299FE451F5139D4003616A9 /* ViewController.swift */; };
+		C299FE491F5139D4003616A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C299FE471F5139D4003616A9 /* Main.storyboard */; };
+		C299FE4B1F5139D4003616A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C299FE4A1F5139D4003616A9 /* Assets.xcassets */; };
+		C299FE4E1F5139D4003616A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C299FE4C1F5139D4003616A9 /* LaunchScreen.storyboard */; };
+		C299FE571F513A04003616A9 /* JJLinearScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C299FE561F513A04003616A9 /* JJLinearScrollView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8CC5CA641D693C753033BCFE /* Pods-JJLinearScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJLinearScrollView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JJLinearScrollView/Pods-JJLinearScrollView.debug.xcconfig"; sourceTree = "<group>"; };
+		8F4AC50CF0036CADD59C2707 /* Pods_JJLinearScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JJLinearScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C299FE401F5139D4003616A9 /* JJLinearScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJLinearScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C299FE431F5139D4003616A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C299FE451F5139D4003616A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C299FE481F5139D4003616A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C299FE4A1F5139D4003616A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C299FE4D1F5139D4003616A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C299FE4F1F5139D4003616A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C299FE561F513A04003616A9 /* JJLinearScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJLinearScrollView.swift; sourceTree = "<group>"; };
+		E830C1325F804F6B7C089C12 /* Pods-JJLinearScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJLinearScrollView.release.xcconfig"; path = "Pods/Target Support Files/Pods-JJLinearScrollView/Pods-JJLinearScrollView.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C299FE3D1F5139D4003616A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8D12AC00D20C11AD8CB82ED /* Pods_JJLinearScrollView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08D4EE9A2A87DF84CB3F8C54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F4AC50CF0036CADD59C2707 /* Pods_JJLinearScrollView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		877D51CF844099723B2C64D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8CC5CA641D693C753033BCFE /* Pods-JJLinearScrollView.debug.xcconfig */,
+				E830C1325F804F6B7C089C12 /* Pods-JJLinearScrollView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C299FE371F5139D4003616A9 = {
+			isa = PBXGroup;
+			children = (
+				C299FE421F5139D4003616A9 /* JJLinearScrollView */,
+				C299FE411F5139D4003616A9 /* Products */,
+				877D51CF844099723B2C64D4 /* Pods */,
+				08D4EE9A2A87DF84CB3F8C54 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C299FE411F5139D4003616A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C299FE401F5139D4003616A9 /* JJLinearScrollView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C299FE421F5139D4003616A9 /* JJLinearScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				C299FE551F5139F2003616A9 /* JJLinearScrollView */,
+				C299FE431F5139D4003616A9 /* AppDelegate.swift */,
+				C299FE451F5139D4003616A9 /* ViewController.swift */,
+				C299FE471F5139D4003616A9 /* Main.storyboard */,
+				C299FE4A1F5139D4003616A9 /* Assets.xcassets */,
+				C299FE4C1F5139D4003616A9 /* LaunchScreen.storyboard */,
+				C299FE4F1F5139D4003616A9 /* Info.plist */,
+			);
+			path = JJLinearScrollView;
+			sourceTree = "<group>";
+		};
+		C299FE551F5139F2003616A9 /* JJLinearScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				C299FE561F513A04003616A9 /* JJLinearScrollView.swift */,
+			);
+			path = JJLinearScrollView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C299FE3F1F5139D4003616A9 /* JJLinearScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C299FE521F5139D4003616A9 /* Build configuration list for PBXNativeTarget "JJLinearScrollView" */;
+			buildPhases = (
+				0A49A3BE2C9E8DEC4F358A1F /* [CP] Check Pods Manifest.lock */,
+				C299FE3C1F5139D4003616A9 /* Sources */,
+				C299FE3D1F5139D4003616A9 /* Frameworks */,
+				C299FE3E1F5139D4003616A9 /* Resources */,
+				4258F48A9020A1550E05B44A /* [CP] Embed Pods Frameworks */,
+				65080AD3053BAF89C2497EAD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JJLinearScrollView;
+			productName = JJLinearScrollView;
+			productReference = C299FE401F5139D4003616A9 /* JJLinearScrollView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C299FE381F5139D4003616A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = " HanJinJun";
+				TargetAttributes = {
+					C299FE3F1F5139D4003616A9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5X9FV29QBX;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C299FE3B1F5139D4003616A9 /* Build configuration list for PBXProject "JJLinearScrollView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C299FE371F5139D4003616A9;
+			productRefGroup = C299FE411F5139D4003616A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C299FE3F1F5139D4003616A9 /* JJLinearScrollView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C299FE3E1F5139D4003616A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C299FE4E1F5139D4003616A9 /* LaunchScreen.storyboard in Resources */,
+				C299FE4B1F5139D4003616A9 /* Assets.xcassets in Resources */,
+				C299FE491F5139D4003616A9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A49A3BE2C9E8DEC4F358A1F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4258F48A9020A1550E05B44A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JJLinearScrollView/Pods-JJLinearScrollView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65080AD3053BAF89C2497EAD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JJLinearScrollView/Pods-JJLinearScrollView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C299FE3C1F5139D4003616A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C299FE461F5139D4003616A9 /* ViewController.swift in Sources */,
+				C299FE441F5139D4003616A9 /* AppDelegate.swift in Sources */,
+				C299FE571F513A04003616A9 /* JJLinearScrollView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C299FE471F5139D4003616A9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C299FE481F5139D4003616A9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C299FE4C1F5139D4003616A9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C299FE4D1F5139D4003616A9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C299FE501F5139D4003616A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C299FE511F5139D4003616A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C299FE531F5139D4003616A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CC5CA641D693C753033BCFE /* Pods-JJLinearScrollView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5X9FV29QBX;
+				INFOPLIST_FILE = JJLinearScrollView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jj.JJLinearScrollView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C299FE541F5139D4003616A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E830C1325F804F6B7C089C12 /* Pods-JJLinearScrollView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5X9FV29QBX;
+				INFOPLIST_FILE = JJLinearScrollView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jj.JJLinearScrollView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C299FE3B1F5139D4003616A9 /* Build configuration list for PBXProject "JJLinearScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C299FE501F5139D4003616A9 /* Debug */,
+				C299FE511F5139D4003616A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C299FE521F5139D4003616A9 /* Build configuration list for PBXNativeTarget "JJLinearScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C299FE531F5139D4003616A9 /* Debug */,
+				C299FE541F5139D4003616A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C299FE381F5139D4003616A9 /* Project object */;
+}
