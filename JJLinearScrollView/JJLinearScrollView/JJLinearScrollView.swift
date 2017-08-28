@@ -128,7 +128,7 @@ class JJLinearScrollView: UIScrollView {
             make.bottom.lessThanOrEqualTo(self.contentView).offset(-subView.insets.bottom)
             
             if preSubView != nil {
-                make.top.equalTo(preSubView!.view.snp.bottom).offset(subView.insets.top + preSubView!.insets.bottom)
+                make.top.equalTo(preSubView!.view.snp.bottom).offset(subView.insets.top + preSubView!.insets.bottom + self.spacing)
             }
             if subView.height > 0 {
                 make.height.equalTo(subView.height)
@@ -144,7 +144,7 @@ class JJLinearScrollView: UIScrollView {
             make.bottom.equalTo(self.contentView).offset(-subView.insets.bottom)
             
             if preSubView != nil {
-                make.left.equalTo(preSubView!.view.snp.right).offset(subView.insets.left + preSubView!.insets.right)
+                make.left.equalTo(preSubView!.view.snp.right).offset(subView.insets.left + preSubView!.insets.right + self.spacing)
             }
             if subView.height > 0 {
                 make.width.equalTo(subView.height)
