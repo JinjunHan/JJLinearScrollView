@@ -3,7 +3,7 @@
 基于UIScrollView的可滑动线性布局，快速简便地实现线性自动布局。布局基于autolayout,引用了SnapKit第三方库。
 
 ### 截图
-![](https://github.com/kiss587898/JJLinearScrollView/blob/master/screenshots/screenshot1.png)
+<img src="https://github.com/kiss587898/JJLinearScrollView/blob/master/screenshots/screenshot1.png" width="288"/>
 
 ## 准备 
 * 下载代码,拖入JJLinearScrollView.swift
