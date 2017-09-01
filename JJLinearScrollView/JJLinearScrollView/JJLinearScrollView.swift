@@ -82,6 +82,15 @@ class JJLinearScrollView: UIScrollView {
         
         // 设置内容视图布局
         self.addSubview(self.contentView);
+        self.contentView.snp.makeConstraints { (make) in
+            make.edges.equalTo(self).inset(self.inset)
+            
+            if self.orientation == .vertical {
+                make.width.equalTo(self)
+            } else {
+                make.height.equalTo(self)
+            }
+        }
     }
     
     /// 添加子控件，线性布局
@@ -155,7 +164,7 @@ class JJLinearScrollView: UIScrollView {
     
     /// 更新布局
     func updateLayout() -> Void {
-        self.contentView.snp.makeConstraints { (make) in
+        self.contentView.snp.remakeConstraints { (make) in
             make.edges.equalTo(self).inset(self.inset)
             
             if self.orientation == .vertical {

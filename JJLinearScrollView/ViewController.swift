@@ -35,12 +35,12 @@ class ViewController: UIViewController {
         }
         
         let btn1 = UIButton(type: .system);
-        btn1.setTitle("button1", for: .normal)
+        btn1.setTitle("自动高度，top:5,left:10,bottom:10,right:20", for: .normal)
         btn1.backgroundColor = self.randomColor()
-        scrollView.addArrangedSubview(btn1, insets: UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 20))
+        scrollView.addArrangedSubview(btn1, insets: UIEdgeInsets(top: 5, left: 10, bottom: 10, right: 20))
         
         let label1 = UILabel()
-        label1.text = "label2"
+        label1.text = "高度80"
         label1.backgroundColor = self.randomColor()
         scrollView.addArrangedSubview(label1, height: 80)
         self.view.addSubview(scrollView)
@@ -58,9 +58,12 @@ class ViewController: UIViewController {
     }
 
     func addClicked() -> Void {
-        let view = UIView()
+        let view = UILabel()
+        view.textAlignment = .center
         view.backgroundColor = self.randomColor()
-        self.scrollView.addArrangedSubview(view, insets: UIEdgeInsets.zero, height: CGFloat(arc4random()%100+50))
+        let height = CGFloat(arc4random()%100+50)
+        view.text = "高度:\(height)"
+        self.scrollView.addArrangedSubview(view, insets: UIEdgeInsets.zero, height: height)
     }
     
     func randomColor() -> UIColor {
