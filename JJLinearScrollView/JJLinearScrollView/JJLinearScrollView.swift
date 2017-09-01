@@ -32,7 +32,7 @@ class JJLinearScrollView: UIScrollView {
     @IBInspectable open var orientation:JJLinearScrollOrientation = .vertical
         {
             didSet {
-                self.setNeedsUpdateConstraints()
+                self.updateLayout()
             }
     }
     /// 内边距
@@ -104,6 +104,7 @@ class JJLinearScrollView: UIScrollView {
         }
         self.contentView.addSubview(view)
         let subView = JJLinearSubView(view: view, insets: insets, height: height)
+        self.layoutSubview(subView, preSubView: self.arrangedSubviews.last)
         self.arrangedSubviews.append(subView)
     }
     
@@ -152,8 +153,8 @@ class JJLinearScrollView: UIScrollView {
         }
     }
     
-    // MARK: 更新布局约束
-    override func updateConstraints() {
+    /// 更新布局
+    func updateLayout() -> Void {
         self.contentView.snp.makeConstraints { (make) in
             make.edges.equalTo(self).inset(self.inset)
             
@@ -169,6 +170,5 @@ class JJLinearScrollView: UIScrollView {
             self.layoutSubview(subView, preSubView: lastSubView)
             lastSubView = subView
         }
-        super.updateConstraints()
     }
 }
