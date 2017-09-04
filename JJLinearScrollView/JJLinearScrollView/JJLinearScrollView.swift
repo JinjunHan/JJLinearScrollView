@@ -93,6 +93,7 @@ class JJLinearScrollView: UIScrollView {
         }
     }
     
+    // MARK: 追加
     /// 添加子控件，线性布局
     ///
     /// - Parameter view: 子控件
@@ -117,9 +118,110 @@ class JJLinearScrollView: UIScrollView {
         self.arrangedSubviews.append(subView)
     }
     
+    // MARK: Insert 插入
+    override func insertSubview(_ view: UIView, at index: Int) {
+        self.insertArrangedSubview(view, at: index)
+    }
+    
+    override func insertSubview(_ view: UIView, aboveSubview siblingSubview: UIView) {
+        self.insertSubview(view, aboveSubview: siblingSubview)
+    }
+    
+    override func insertSubview(_ view: UIView, belowSubview siblingSubview: UIView) {
+        self.insertSubview(view, belowSubview: siblingSubview)
+    }
+    
+    /// 插入子控件
+    ///
+    /// - Parameters:
+    ///   - view: 子控件
+    ///   - siblingSubview: 在其他的子控件上面
+    ///   - insets: 边距
+    ///   - height: 高度
+    func insertArrangedSubview(_ view: UIView, aboveSubview siblingSubview: UIView, insets:UIEdgeInsets = UIEdgeInsets.zero, height:CGFloat = 0.0){
+        let index = self.index(view)
+        if index != nil {
+            self.insertArrangedSubview(view, at: index!, insets: insets, height: height)
+        }
+    }
+    
+    /// 插入子控件
+    ///
+    /// - Parameters:
+    ///   - view: 子控件
+    ///   - siblingSubview: 在其他的子控件下面
+    ///   - insets: 边距
+    ///   - height: 高度,default:0 自动高度
+    func insertArrangedSubview(_ view: UIView, belowSubview siblingSubview: UIView, insets:UIEdgeInsets = UIEdgeInsets.zero, height:CGFloat = 0.0){
+        let index = self.index(view)
+        if index != nil {
+            self.insertArrangedSubview(view, at: index!+1, insets: insets, height: height)
+        }
+    }
+    
+    /// 插入子控件
+    ///
+    /// - Parameters:
+    ///   - view: 子控件
+    ///   - index: 位置
+    ///   - insets: 边距
+    ///   - height: 高度,default:0 自动高度
+    func insertArrangedSubview(_ view: UIView, at index: Int, insets:UIEdgeInsets = UIEdgeInsets.zero, height:CGFloat = 0.0) {
+        
+        // 如果插入的地方在末尾，直接调用追加的方法
+        if index >= self.arrangedSubviews.count {
+            self.addArrangedSubview(view, insets: insets, height: height)
+            return
+        }
+        
+        // 获取前一个SubView
+        var preSubView:JJLinearSubView?
+        if index > 0 {
+            preSubView = self.arrangedSubviews[index-1]
+        }
+        
+        // 获取后一个SubView
+        var sufSubView:JJLinearSubView?
+        if index < self.arrangedSubviews.count {
+            sufSubView = self.arrangedSubviews[index]
+        }
+        
+        self.contentView.addSubview(view)
+        let subView = JJLinearSubView(view: view, insets: insets, height: height)
+        self.layoutSubview(subView, preSubView: preSubView, sufSubView: sufSubView)
+        self.arrangedSubviews.append(subView)
+    }
+    
+    // MARK: Remove 移除
+    /// 移除子控件
+    ///
+    /// - Parameter view: 要被移除的控件
+    func removeArrangedSubview(_ view: UIView) {
+        let index = self.index(view)
+        guard index != nil else {
+            print("该View不存在于队列中，无需移除")
+            return
+        }
+        self.removeArrangedSubView(at: index!)
+    }
+    
+    /// 移除子控件
+    ///
+    /// - Parameter index: 位置
+    func removeArrangedSubView(at index:Int) {
+        self.arrangedSubviews[index].view.removeFromSuperview()
+        self.arrangedSubviews.remove(at: index)
+        
+        var preSubView:JJLinearSubView?
+        if index > 0 {
+            preSubView = self.arrangedSubviews[index-1]
+        }
+        // 重新布局
+        self.layoutSubview(self.arrangedSubviews[index], preSubView: preSubView)
+    }
     
     // MARK: 布局子控件
-    private func layoutSubview(_ subView: JJLinearSubView, preSubView: JJLinearSubView?) {
+    private func layoutSubview(_ subView: JJLinearSubView, preSubView: JJLinearSubView?, sufSubView:JJLinearSubView? = nil) {
         switch self.orientation {
         case .vertical:
             self.layoutVerticalSubview(subView, preSubView: preSubView)
@@ -127,6 +229,9 @@ class JJLinearScrollView: UIScrollView {
         case .horizontal:
             self.layoutHorizontalSubview(subView, preSubView: preSubView)
             break
+        }
+        if sufSubView != nil {
+            self.layoutSubview(sufSubView!, preSubView: subView)
         }
     }
     
@@ -179,5 +284,15 @@ class JJLinearScrollView: UIScrollView {
             self.layoutSubview(subView, preSubView: lastSubView)
             lastSubView = subView
         }
+    }
+    
+    /// 查找View的位置
+    func index(_ view:UIView) -> Int? {
+        return self.arrangedSubviews.index(where: { (subView) -> Bool in
+            if subView.view == view {
+                return true
+            }
+            return false
+        })
     }
 }
