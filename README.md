@@ -35,3 +35,7 @@ scrollView.orientation = .horizontal
 ### 其他设置
 * inset 全部子控件距离父控件的边距
 * spacing 全部子控件之间的间隔
+
+### 更新
+#### 2017/9/4
+* 新增insert、remove操作
