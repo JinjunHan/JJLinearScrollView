@@ -13,7 +13,7 @@ import SnapKit
 ///
 /// - vertical: 垂直方向
 /// - horizontal: 水平方向
-enum JJLinearScrollOrientation {
+@objc enum JJLinearScrollOrientation: Int {
     /// 垂直方向
     case vertical
     /// 水平方向
@@ -288,7 +288,7 @@ class JJLinearScrollView: UIScrollView {
     
     /// 查找View的位置
     func index(_ view:UIView) -> Int? {
-        return self.arrangedSubviews.index(where: { (subView) -> Bool in
+        return self.arrangedSubviews.firstIndex(where: { (subView) -> Bool in
             if subView.view == view {
                 return true
             }

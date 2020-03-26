@@ -57,7 +57,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    func addClicked() -> Void {
+    @objc func addClicked() -> Void {
         let view = UILabel()
         view.textAlignment = .center
         view.backgroundColor = self.randomColor()
